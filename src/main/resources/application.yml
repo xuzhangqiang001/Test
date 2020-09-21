@@ -1,0 +1,5 @@
+spring:
+  freemarker:
+    checkTemplateLocation:false
+  datasource:
+

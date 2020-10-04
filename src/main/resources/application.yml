@@ -1,5 +1,16 @@
 spring:
-  freemarker:
-    checkTemplateLocation:false
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root1101
+    url: jdbc:mysql://127.0.0.1/sell-db-dev?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
 
+server:
+  port: 1832
+  servlet:
+    context-path: /sell-dev
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  # mapper映射文件位置
+  type-aliases-package: com.imsteam.sell.entity
